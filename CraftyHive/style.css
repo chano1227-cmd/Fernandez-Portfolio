@@ -1,0 +1,374 @@
+*{
+    margin: 0; padding: 0; 
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+  }
+  
+html{
+    font-size: 65%;
+    scroll-behavior: smooth; 
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+  }
+  
+section{
+    padding: 2rem 9%;
+  }
+  
+.heading{
+  text-align: center;
+  font-size: 4rem;
+  padding: 1rem;
+  color: black;
+  margin: 2rem 0;
+  background: rgba (255, 51, 153, .05);
+}
+
+.heading span{
+  color: #e1b382 ;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: #e1b382;
+    color:#2d545e  ;
+    padding: .9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+  
+.btn:hover{
+    background: #b9d1d7
+}
+  
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: #e1b382;
+    padding: 3rem 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+.logo-container{
+    position: absolute;
+    left: 30px; 
+    justify-content: left;
+}
+
+.logo-container img{
+    width: 50px; 
+    height: 45px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+}
+
+header .navbar a{
+    font-size: 1.5rem;
+    padding: 0 1.5rem; 
+    color: #2d545e;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
+  
+header .navbar a:hover{
+  color:darkred;
+  }
+
+header .icons a{
+  font-size: 1.5rem;
+  color:#2d545e;
+  margin-left: 1.5rem;
+}
+
+header .icons a:hover{
+  color:darkred;
+}
+
+header #toggler{
+  display: none;
+    
+}
+
+header .fa-bars{
+  font-size: 3rem;
+  color: #333;
+  border-radius: .5rem;
+  padding: .5rem 1.5rem;
+  cursor: pointer;
+  border: .1rem solid rgba(0, 0, 0, 3);
+  display: none;
+}
+
+header .user-menu-container{
+  font-size: 1.5rem;
+  padding: 0 1.5rem; 
+  color: #2d545e;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+}
+  
+.home{
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  background: url(back.jpg) no-repeat; 
+  background-size: cover;
+  background-position: right;
+}
+  
+.home .home-content{
+  max-width: 45rem;
+}
+
+.home .home-content h3{
+  font-size: 6rem;
+  color: #2d545e;
+}
+  
+.home .home-content span{
+    font-size: 4rem;
+    color: #2d545e;
+    line-height: 1.5;
+}
+  
+.home .home-content p{
+    font-size: 2rem;
+    color:#2d545e;
+    margin-top: 20px;
+    line-height: 1.5;
+}
+
+.about{
+  background:#2d545e ;
+}
+
+
+.about .row{
+  text-align: center;
+  display: flex;
+  gap: 2rem;
+  padding: 2rem 0;
+  padding-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.about .row .image-container{
+  flex: 1 1 40rem;
+  position: relative;
+}
+
+.about .row .image-container img{
+  width: 100%;
+  border: 1.5rem solid white;
+  border-radius: .3rem;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+  height: 80%;
+  object-fit: cover;
+}
+
+.about .row .image-container h3{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  mix-blend-mode: screen;
+  font-size: 3rem;
+  background: white;
+  width: 100%;
+  padding: 1rem 2rem;
+}
+
+.about .row .content{
+  flex: 1 1 40rem;
+  
+}
+    
+.about .row .content h3{
+  font-size: 10rem;
+  color:#e1b382;
+  padding-bottom: 20px;
+}
+
+.about .row .content p {
+  font-size: 2rem;         
+  /*padding: 1.5rem;  */    
+  line-height: 3.2rem;       
+  color: #ffffff;           
+  text-align: center;        
+  max-width: 700px;          
+  margin: 0 auto;            
+}
+
+/* COLLECTIONS */
+.flower-collection {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.collection-row {
+  display: flex;
+}
+
+.collection {
+  position: relative;
+  width: 280px;
+  height: 280px;
+  margin: 30px;
+}
+
+.collection img {
+  width: 100%;
+  height: 120%;
+  object-fit: cover;
+}
+
+.hover-content {
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color:  #2d545e; 
+  color: rgb(240, 223, 209);
+  text-align: center; 
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+.hover-content:hover {
+  opacity: 1;
+}
+
+/*Footer*/
+.footer{
+  margin-top: 20px;
+}
+.footer .box-container { 
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer .box-container .box{
+  flex-grow: 1;
+}
+
+.footer .box-container .box h3{
+  color: #333;
+  font-size: 2.5rem;
+  padding: 1rem 0;
+}
+
+.footer .box-container .box a{
+  display: block;
+  color: #666;
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+
+.footer .box-container .box a:hover {
+  text-decoration: underline;
+}
+
+.footer .box-container .box p{
+  display: block;
+  color: #666;
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+
+
+.footer .credit{
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+  padding-top: 2.5rem;
+  font-size: 2rem;
+  color:#333;
+  border-top: .1rem solid rgba(0, 0, 0, .1)
+}
+
+
+@media (max-width: 991px){
+  html{
+    font-size: 55%;
+  }
+  
+  header{
+    padding: 2rem;
+  }
+  
+  section{
+    padding: 2rem;
+  }
+  
+  .home{
+    background-position: left;
+  }
+  
+}
+
+
+@media (max-width: 768px){
+  header .fa-bars{
+    display: block;
+  }
+  
+  header .navbar{
+    position: absolute;
+    top:100%; left:0; right:0;
+    background:#eee;
+    border-top: 1rem solid rgba(0, 0, 0, .1);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  
+  header #toggler:checked ~ .navbar{
+    clip-path: polygon(0 0, 100% 0, 100% 1000%, 0% 100%);
+  }
+  
+  header .navbar a{
+    margin: 1.5rem;
+    padding: 1.5rem;
+    background: #fff;
+    border: .1rem solid rgba(0, 0, 0, .1);
+    display: block;
+  }
+  
+  .home .home-content h3{
+    font-size: 5rem;
+  }
+  
+  .home .home-content span{
+    font-size: 2.5rem;
+  }
+} 
+
+@media (max-width: 450px){
+  html{
+    font-size: 50%;
+  }
+  
+  .heading{
+    font-size: 3rem;
+  }
+  
+  header{
+    padding: 2rem;
+  }
+}
